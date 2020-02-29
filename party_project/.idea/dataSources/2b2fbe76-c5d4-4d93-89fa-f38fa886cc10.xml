@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="party_database@localhost">
-  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.11">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.17">
     <root id="1">
       <ServerVersion>5.5.62</ServerVersion>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -39,7 +39,6 @@
     </schema>
     <schema id="12" parent="1" name="party_database">
       <Current>1</Current>
-      <Visible>1</Visible>
       <Collation>utf8_general_ci</Collation>
     </schema>
     <schema id="13" parent="1" name="performance_schema">
