@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.gduf.dao.PartyMemberDao">
+    <resultMap id="partyMemberMap" type="edu.gduf.domain.PartyMember">
+        <result property="applicationNum" column="application_num"/>
+        <result property="applicationTime" column="application_time"/>
+        <result property="enterTime" column="enter_time"/>
+        <result property="positiveTime" column="positive_time"/>
+        <result property="isOfficial" column="is_official"/>
+    </resultMap>
+    <!-- 查询所有 -->
+    <select id="findAll" resultMap="partyMemberMap">
+        select * from party_member;
+    </select>
+
+</mapper>

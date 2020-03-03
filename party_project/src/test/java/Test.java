@@ -1,4 +1,4 @@
-import utils.DruidUtil;
+import edu.gduf.utils.DruidUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.gduf.dao.StudentDao">
+    <!-- 配置resultMap  原对象是Student类,对应student表,对部分字段和属性名进行重新匹配 -->
+    <resultMap id="studentMap" type="edu.gduf.domain.Student">
+        <id property="num" column="num"/>
+        <result property="classNum" column="class_num"/>
+        <result property="studentNative" column="native"/>
+        <result property="identityCard" column="identity_card"/>
+        <result property="degreeOfEducation" column="degree_of_education"/>
+        <result property="paliticsStatus" column="palitics_status"/>
+        <result property="stageOfDevelopment" column="stageOfDevelopment"/>
+        <result property="admissionTime" column="admission_time"/>
+    </resultMap>
+    <!-- 查询所有 -->
+    <select id="findAll" resultMap="studentMap">
+        select * from student;
+    </select>
+</mapper>

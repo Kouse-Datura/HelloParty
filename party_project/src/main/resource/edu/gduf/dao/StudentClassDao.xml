@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.gduf.dao.StudentClassDao">
+    <!-- 配置resultMap  原对象是StudentClass类,对应student_class表,对部分字段和属性名进行重新匹配 -->
+    <resultMap id="studentClassMap" type="edu.gduf.domain.StudentClass">
+        <id property="classNum" column="class_num"/>
+        <result property="partyMembers" column="party_members"/>
+        <result property="classMembers" column="class_members"/>
+    </resultMap>
+    <!-- 查询所有 -->
+    <select id="findAll" resultMap="studentClassMap">
+        select * from student_class;
+    </select>
+</mapper>
