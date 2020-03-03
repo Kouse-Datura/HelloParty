@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.gduf.dao.ApplicantDao">
+    <!-- 配置resultMap  原对象是Applicant类,对应applicant表,对部分字段和属性名进行重新匹配 -->
+    <resultMap id="applicantMap" type="edu.gduf.domain.Applicant">
+        <id property="num" column="num"/>
+        <result property="timeOfApplication" column="time_of_application"/>
+        <result property="applicantOccupation" column="applicant_occupation"/>
+        <result property="talkTime" column="talk_time"/>
+        <result property="isAdult" column="is_adult"/>
+    </resultMap>
+    <!-- 查询所有操作 -->
+    <select id="findAll" resultMap="applicantMap">
+        select * from applicant;
+    </select>
+</mapper>

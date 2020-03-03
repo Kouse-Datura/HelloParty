@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.gduf.dao.ActivistDao">
+    <!-- 配置resultMap  原对象是Activist类,对应activist表,对部分字段和属性名进行重新匹配 -->
+    <resultMap id="activistMap" type="edu.gduf.domain.Activist">
+        <id property="num" column="num"/>
+        <result property="activistOccupation" column="activist_occupation"/>
+        <result property="identifyingActivist" column="identifying_activist"/>
+        <result property="directingScore" column="directing_score"/>
+        <result property="compositeRanking" column="composite_ranking"/>
+        <result property="thinkingReport" column="thinking_report"/>
+        <result property="needNum" column="need_num"/>
+        <result property="attendNum" column="attend_num"/>
+        <result property="cultivateContacts" column="cultivate_contacts"/>
+        <result property="whichVolume" column="which_volume"/>
+        <result property="inspectTime" column="inspect_time"/>
+    </resultMap>
+    <!-- 查询所有功能 -->
+    <select id="findAll" resultMap="activistMap">
+        select * from activist;
+    </select>
+</mapper>

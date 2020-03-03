@@ -2,20 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ee691f8-2d70-4f8c-80f7-a50d41a7ad66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/HelloParty.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/mavenServices.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/party.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/ActivistDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/ApplicantDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/DeveloperDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/InspectorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/MarkDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/PartyMemberDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/StudentClassDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/StudentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Activist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Applicant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Developer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Inspector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Mark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/PartyMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/StudentClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/utils/MyBatisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/ActivistDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/ApplicantDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/DeveloperDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/InspectorDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/MarkDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/PartyMemberDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/StudentClassDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/StudentDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/mybatis_config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ActivistDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ApplicantDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/InspectorDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MarkDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PartyMemberDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StudentClassDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StudentDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/edu/gduf/dao/StudentDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/edu/gduf/domain/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/edu/gduf/utils/DruidUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/edu/gduf/utils/MyBatisUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis_config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/party.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/StudentDaoTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2b2fbe76-c5d4-4d93-89fa-f38fa886cc10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2b2fbe76-c5d4-4d93-89fa-f38fa886cc10.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/party_database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/DruidUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/utils/DruidUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/party.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/party.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/party_database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/DruidUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +72,30 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="party_database@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="party_database@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="party_database@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="party_database: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -71,6 +128,7 @@
   <component name="ProjectId" id="1YAOteY9VTD4pjfOeV8pha9f196" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -93,10 +151,10 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -107,12 +165,52 @@
       <recent name="D:\IDEA_File\party_project\src\main\resource" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Test.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PartyMemberDaoTest.test">
+    <configuration name="ActivistDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="party_project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <option name="METHOD_NAME" value="testAdd" />
+      <option name="MAIN_CLASS_NAME" value="ActivistDaoTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InspectorDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="party_project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InspectorDaoTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MarkDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="party_project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MarkDaoTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PartyMemberDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="party_project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PartyMemberDaoTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentClassDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="party_project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StudentClassDaoTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,7 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Test.testAdd" />
+        <item itemvalue="JUnit.PartyMemberDaoTest.test" />
+        <item itemvalue="JUnit.MarkDaoTest.test" />
+        <item itemvalue="JUnit.InspectorDaoTest.test" />
+        <item itemvalue="JUnit.ActivistDaoTest.test" />
+        <item itemvalue="JUnit.StudentClassDaoTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -148,6 +250,11 @@
       <workItem from="1582731964285" duration="826000" />
       <workItem from="1582880526667" duration="1357000" />
       <workItem from="1582888254181" duration="77000" />
+      <workItem from="1582968606863" duration="11087000" />
+      <workItem from="1582980338062" duration="1609000" />
+      <workItem from="1583029640382" duration="20165000" />
+      <workItem from="1583138306697" duration="599000" />
+      <workItem from="1583218870414" duration="4885000" />
     </task>
     <servers />
   </component>
@@ -155,34 +262,133 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#Inspections" timestamp="1582969986920">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1582969986920" />
     <state x="361" y="71" key="#SQL_Dialects" timestamp="1582445725552">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#SQL_Dialects/0.0.1536.824@0.0.1536.824" timestamp="1582445725552" />
+    <state x="499" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582973814723">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582973814723" />
+    <state x="574" y="114" key="#com.intellij.ide.util.MemberChooser" timestamp="1583049684457">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="114" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583049684457" />
+    <state x="574" y="114" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582978308692" />
+    <state x="574" y="114" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1583030950448" />
+    <state x="430" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1582971152509">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="430" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1582971152509" />
+    <state x="511" y="136" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1583220207117">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="511" y="136" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583220207117" />
     <state x="367" y="6" key="CommitChangelistDialog2" timestamp="1582727407027">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="367" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582727407027" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1582732019304">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1583219382479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582732019304" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1582732593060">
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583219382479" />
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583030571882" />
+    <state width="1493" height="171" key="GridCell.Tab.0.bottom" timestamp="1583223771186">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582732593060" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1582888254503">
+    <state width="1493" height="171" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583223771186" />
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582981255177" />
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582994632031" />
+    <state width="1493" height="171" key="GridCell.Tab.0.center" timestamp="1583223771186">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="171" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583223771186" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582981255177" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582994632031" />
+    <state width="1493" height="171" key="GridCell.Tab.0.left" timestamp="1583223771186">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="171" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583223771186" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582981255176" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582994632031" />
+    <state width="1493" height="171" key="GridCell.Tab.0.right" timestamp="1583223771186">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="171" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583223771186" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582981255177" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582994632031" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1582994632032">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582980760119" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582994632032" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1582994632031">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582980760119" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582994632031" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1582994632031">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582980760119" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582994632031" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1582994632031">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582980760119" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582994632031" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1583219929612">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583219929612" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583030593001" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1583218876987">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583218876987" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1804.1220@0.0.1536.824" timestamp="1582888254503" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582731997378" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583139467506" />
     <state x="485" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1582732059982">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1582732059982" />
+    <state x="1912" y="-8" width="1193" height="611" maximized="true" key="dock-window-1" timestamp="1583220887689">
+      <screen x="1920" y="0" width="1194" height="794" />
+    </state>
+    <state x="1912" y="-8" width="1193" height="611" maximized="true" key="dock-window-1/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583220887689" />
+    <state x="-6" y="0" width="781" height="830" key="dock-window-1/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582976604739" />
+    <state x="5" y="8" width="1201" height="808" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1583044313878" />
+    <state x="2087" y="88" width="1193" height="611" key="dock-window-2" timestamp="1583221144809">
+      <screen x="1920" y="0" width="1194" height="794" />
+    </state>
+    <state x="2087" y="88" width="1193" height="611" key="dock-window-2/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583221144809" />
+    <state x="144" y="5" width="631" height="816" key="dock-window-2/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582977791715" />
+    <state x="1920" y="44" width="1201" height="611" key="dock-window-3" timestamp="1583056890001">
+      <screen x="1920" y="0" width="1194" height="794" />
+    </state>
+    <state x="1920" y="44" width="1201" height="611" key="dock-window-3/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583056890001" />
     <state x="178" y="108" key="new project wizard" timestamp="1582881238809">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="178" y="108" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1582881238809" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1583223721795">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583223721795" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/io/Resources.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

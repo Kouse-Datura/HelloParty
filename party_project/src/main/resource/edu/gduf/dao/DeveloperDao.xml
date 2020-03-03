@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.gduf.dao.DeveloperDao">
+    <resultMap id="developerMap" type="edu.gduf.domain.Developer">
+        <id property="num" column="num"/>
+        <result property="dadName" column="dad_name"/>
+        <result property="dadIdentity" column="dad_identity"/>
+        <result property="dadStatus" column="dad_status"/>
+        <result property="momName" column="mom_name"/>
+        <result property="momIdentity" column="mom_identity"/>
+        <result property="momStatus" column="mom_status"/>
+    </resultMap>
+
+    <select id="findAll" resultMap="developerMap">
+        select * from developer;
+    </select>
+
+</mapper>

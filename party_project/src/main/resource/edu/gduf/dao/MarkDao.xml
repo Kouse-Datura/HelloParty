@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.gduf.dao.MarkDao">
+    <resultMap id="markMap" type="edu.gduf.domain.Mark">
+        <id property="num" column="num"/>
+        <id property="semester" column="semester"/>
+        <result property="disciplineInspection" column="discipline_inspection"/>
+        <result property="compositeScore" column="composite_score"/>
+        <result property="compositeRanking" column="composite_ranking"/>
+        <result property="academicScore" column="academic_score"/>
+        <result property="academicRanking" column="academic_ranking"/>
+    </resultMap>
+    <!-- 查询所有 -->
+    <select id="findAll" resultMap="markMap">
+        select * from mark;
+    </select>
+
+</mapper>
