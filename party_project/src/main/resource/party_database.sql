@@ -1,7 +1,23 @@
 ﻿# Host: 127.0.0.1  (Version 5.5.62)
-# Date: 2020-03-01 12:03:02
+# Date: 2020-03-09 23:15:42
 # Generator: MySQL-Front 6.1  (Build 1.26)
 
+
+#
+# Structure for table "party_branch"
+#
+
+CREATE TABLE `party_branch` (
+  `branch_name` varchar(20) NOT NULL DEFAULT '',
+  `class_num` varchar(10) NOT NULL DEFAULT '',
+  PRIMARY KEY (`branch_name`,`class_num`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+#
+# Data for table "party_branch"
+#
+
+INSERT INTO `party_branch` VALUES ('学生第三党支部','1815493');
 
 #
 # Structure for table "student_class"
@@ -27,7 +43,7 @@ INSERT INTO `student_class` VALUES ('1815493',0,49);
 CREATE TABLE `student` (
   `num` varchar(10) NOT NULL,
   `class_num` varchar(10) NOT NULL DEFAULT '',
-  `name` varchar(32) NOT NULL,
+  `name` varchar(10) NOT NULL DEFAULT '',
   `sex` varchar(10) NOT NULL,
   `nation` varchar(10) NOT NULL,
   `native` varchar(10) NOT NULL,
@@ -56,8 +72,8 @@ INSERT INTO `student` VALUES ('181549315','1815493','古洪铨','男','汉族','
 
 CREATE TABLE `activist` (
   `num` varchar(10) NOT NULL,
-  `activist_occupation` varchar(10) DEFAULT NULL,
-  `identifying_activist` date NOT NULL,
+  `activist_occupation` varchar(50) DEFAULT NULL,
+  `identifying_activist` date DEFAULT NULL,
   `directing_score` decimal(4,2) DEFAULT NULL,
   `composite_ranking` tinyint(4) DEFAULT NULL,
   `agree` tinyint(4) DEFAULT NULL,
@@ -70,7 +86,7 @@ CREATE TABLE `activist` (
   `superintendent2` varchar(10) DEFAULT NULL,
   `cultivate_contacts` varchar(10) DEFAULT NULL,
   `which_volume` tinyint(4) DEFAULT NULL,
-  `inspect_time` varchar(10) DEFAULT NULL,
+  `inspect_time` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`num`),
   CONSTRAINT `FK_Reference_2` FOREIGN KEY (`num`) REFERENCES `student` (`num`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -89,8 +105,8 @@ CREATE TABLE `applicant` (
   `time_of_application` date NOT NULL,
   `speaker` varchar(10) NOT NULL,
   `talk_time` date NOT NULL,
-  `applicant_occupation` varchar(20) NOT NULL,
-  `is_adult` tinyint(3) unsigned NOT NULL,
+  `applicant_occupation` varchar(50) NOT NULL DEFAULT '',
+  `is_adult` tinyint(1) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`num`),
   CONSTRAINT `FK_Reference_1` FOREIGN KEY (`num`) REFERENCES `student` (`num`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -107,7 +123,7 @@ CREATE TABLE `applicant` (
 CREATE TABLE `developer` (
   `num` varchar(10) NOT NULL,
   `identifying_developer` date NOT NULL,
-  `profession` varchar(10) NOT NULL,
+  `profession` varchar(20) NOT NULL DEFAULT '',
   `dad_name` varchar(10) DEFAULT NULL,
   `dad_identity` varchar(20) DEFAULT NULL,
   `dad_status` varchar(10) DEFAULT NULL,
@@ -129,14 +145,14 @@ CREATE TABLE `developer` (
 
 CREATE TABLE `inspector` (
   `num` varchar(10) NOT NULL,
-  `party_score` decimal(3,1) DEFAULT NULL,
+  `party_score` decimal(4,2) DEFAULT NULL,
   `training_time` date DEFAULT NULL,
-  `experience` varchar(10) DEFAULT NULL,
-  `advantage` varchar(10) DEFAULT NULL,
-  `disadvantage` varchar(10) DEFAULT NULL,
-  `award` varchar(10) DEFAULT NULL,
-  `competitive_score` decimal(3,1) DEFAULT NULL,
-  `inspector_occupation` varchar(20) DEFAULT NULL,
+  `experience` varchar(150) DEFAULT NULL,
+  `advantage` varchar(100) DEFAULT NULL,
+  `disadvantage` varchar(100) DEFAULT NULL,
+  `award` varchar(50) DEFAULT NULL,
+  `competitive_score` decimal(4,2) DEFAULT NULL,
+  `inspector_occupation` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`num`),
   CONSTRAINT `FK_Reference_4` FOREIGN KEY (`num`) REFERENCES `student` (`num`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -152,12 +168,12 @@ CREATE TABLE `inspector` (
 
 CREATE TABLE `mark` (
   `num` varchar(10) NOT NULL,
-  `discipline_inspection` varchar(10) DEFAULT NULL,
+  `discipline_inspection` varchar(100) DEFAULT NULL,
   `composite_score` decimal(4,2) DEFAULT NULL,
   `composite_ranking` tinyint(3) DEFAULT '0',
   `academic_score` decimal(4,2) DEFAULT NULL,
   `academic_ranking` tinyint(3) DEFAULT '0',
-  `semester` varchar(10) NOT NULL,
+  `semester` varchar(20) NOT NULL DEFAULT '',
   PRIMARY KEY (`num`,`semester`),
   CONSTRAINT `FK_Reference_5` FOREIGN KEY (`num`) REFERENCES `student` (`num`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -173,16 +189,32 @@ CREATE TABLE `mark` (
 
 CREATE TABLE `party_member` (
   `num` varchar(10) NOT NULL,
-  `application_num` varchar(10) DEFAULT NULL,
+  `application_num` varchar(20) DEFAULT NULL,
   `application_time` date DEFAULT NULL,
   `enter_time` date DEFAULT NULL,
   `positive_time` date DEFAULT NULL,
-  `is_official` tinyint(4) NOT NULL,
+  `is_official` tinyint(1) unsigned DEFAULT NULL,
   PRIMARY KEY (`num`),
   CONSTRAINT `FK_Reference_7` FOREIGN KEY (`num`) REFERENCES `student` (`num`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 #
 # Data for table "party_member"
+#
+
+
+#
+# Structure for table "user"
+#
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(20) NOT NULL DEFAULT '',
+  `password` varchar(10) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+#
+# Data for table "user"
 #
 
