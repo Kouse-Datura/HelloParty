@@ -4,7 +4,7 @@ package edu.gduf.service;
  * Demo Class
  *
  * @author 古市
- * @date 2020-03-28 11:13
+ * @date 2020-04-06 15:23
  **/
-public interface InformationEntryService {
+public interface FileGenerateService {
 }
