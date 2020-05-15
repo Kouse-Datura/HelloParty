@@ -2,7 +2,18 @@
 <module version="4">
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="Spring_config" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resource/spring_config.xml</file>
+        </fileset>
+        <fileset id="web dispatcherServlet servlet context" name="MVC dispatcherServlet servlet context" removed="true">
+          <file>file://$MODULE_DIR$/src/main/resource/spring_config.xml</file>
+        </fileset>
+        <fileset id="web application context" name="MVC application context" removed="true">
+          <file>file://$MODULE_DIR$/src/main/resource/spring_config.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resource/springmvc.xml</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
 </module>

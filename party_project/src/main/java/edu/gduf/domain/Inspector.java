@@ -1,7 +1,6 @@
 package edu.gduf.domain;
 
 import java.io.Serializable;
-import java.util.Date;
 
 /**
  * Demo Class
@@ -23,7 +22,7 @@ public class Inspector implements Serializable {
     /**
      * 党课培训时间
      */
-    private Date trainingTime;
+    private String trainingTime;
     /**
      * 经历
      */
@@ -40,10 +39,7 @@ public class Inspector implements Serializable {
      * 获奖情况
      */
     private String award;
-    /**
-     * 答辩成绩
-     */
-    private Double competitiveScore;
+
     /**
      * 考察对象现任职务
      */
@@ -65,11 +61,11 @@ public class Inspector implements Serializable {
         this.partyScore = partyScore;
     }
 
-    public Date getTrainingTime() {
+    public String getTrainingTime() {
         return trainingTime;
     }
 
-    public void setTrainingTime(Date trainingTime) {
+    public void setTrainingTime(String trainingTime) {
         this.trainingTime = trainingTime;
     }
 
@@ -105,13 +101,6 @@ public class Inspector implements Serializable {
         this.award = award;
     }
 
-    public Double getCompetitiveScore() {
-        return competitiveScore;
-    }
-
-    public void setCompetitiveScore(Double competitiveScore) {
-        this.competitiveScore = competitiveScore;
-    }
 
     public String getInspectorOccupation() {
         return inspectorOccupation;
@@ -131,7 +120,6 @@ public class Inspector implements Serializable {
                 ", advantage='" + advantage + '\'' +
                 ", disadvantage='" + disadvantage + '\'' +
                 ", award='" + award + '\'' +
-                ", competitiveScore=" + competitiveScore +
                 ", inspectorOccupation='" + inspectorOccupation + '\'' +
                 '}';
     }

@@ -15,4 +15,68 @@
         select * from party_member;
     </select>
 
+
+    <!--  根据学号查询信息 -->
+    <select id="findPartyMemberByNum" resultMap="partyMemberMap">
+        select * from party_member where num = #{num}
+    </select>
+
+    <select id="findAllNums" resultType="String">
+        select num from party_member;
+    </select>
+
+    <select id="findAllNumsFromDeveloper" resultType="String">
+        select num from developer;
+    </select>
+
+    <update id="updateStage" parameterType="java.util.List">
+        update student set stage_of_development = 'PartyMember' where num in
+        <foreach collection="list" item="member" open="(" close=")" separator=",">
+            #{member.num}
+        </foreach>
+    </update>
+
+    <insert id="addPartyMemberList" parameterType="java.util.List">
+        insert into party_member (num, application_num, application_time, enter_time, positive_time, is_official) VALUES
+        <foreach collection="list" separator="," item="member">
+            (
+             #{member.num},#{member.applicationNum},#{member.applicationTime},#{member.enterTime},
+             <if test="member.positiveTime != null and member.positiveTime != '' ">
+                 #{member.positiveTime},
+             </if>
+             <if test="member.positiveTime == '' ">
+                 null,
+             </if>
+             #{member.isOfficial}
+            )
+        </foreach>
+    </insert>
+
+    <!-- 只要数据项中不为空就进行数据覆盖 -->
+    <update id="updatePartyMemberList" parameterType="java.util.List">
+        <foreach collection="list" item="member" separator=";">
+            update party_member
+            <set>
+                <if test="member.applicationNum != null and member.applicationNum != '' ">
+                    application_num = #{member.applicationNum},
+                </if>
+                <if test="member.applicationTime != null and member.applicationTime != '' ">
+                    application_time = #{member.applicationTime},
+                </if>
+                <if test="member.enterTime != null and member.enterTime != '' ">
+                    enter_time = #{member.enterTime},
+                </if>
+                <if test="member.positiveTime != null and member.positiveTime != '' ">
+                    positive_time = #{member.positiveTime},
+                </if>
+                <if test="member.isOfficial != null and member.isOfficial != '' ">
+                    is_official = #{member.isOfficial},
+                </if>
+            </set>
+            where num = #{member.num}
+        </foreach>
+    </update>
+
+
+
 </mapper>

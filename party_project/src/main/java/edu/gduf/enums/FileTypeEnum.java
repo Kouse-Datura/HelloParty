@@ -7,4 +7,20 @@ package edu.gduf.enums;
  * @date 2020-03-28 11:43
  **/
 public enum FileTypeEnum {
+
+    /**
+     *
+     */
+    XLS(".xls"),
+    XLSX(".xlsx");
+
+    private String fileType;
+
+    FileTypeEnum(String fileType) {
+        this.fileType = fileType;
+    }
+
+    public String getFileType() {
+        return fileType;
+    }
 }

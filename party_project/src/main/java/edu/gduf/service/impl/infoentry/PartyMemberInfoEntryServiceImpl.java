@@ -1,12 +1,12 @@
-package edu.gduf.service.impl;
+package edu.gduf.service.impl.infoentry;
 
 import edu.gduf.dao.PartyMemberDao;
 import edu.gduf.domain.PartyMember;
 import edu.gduf.domain.ResultInfo;
 import edu.gduf.service.InfoEntryService;
-import edu.gduf.utils.MyBatisUtil;
 import edu.gduf.utils.PoiUtil;
-import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,17 @@ import java.util.List;
  * @author 古市
  * @date 2020-04-03 22:38
  **/
+@Service
 public class PartyMemberInfoEntryServiceImpl implements InfoEntryService {
+
+    private PartyMemberDao partyMemberDao;
+
+    @Autowired
+    public void setPartyMemberDao(PartyMemberDao dao) {
+        this.partyMemberDao = dao;
+    }
+
+
     @Override
     public ResultInfo informationEntry(String filepath) {
         //解析文件
@@ -30,15 +40,11 @@ public class PartyMemberInfoEntryServiceImpl implements InfoEntryService {
         //解析数据列表
         List<PartyMember> partyMemberList = readList(lists);
 
-        //获取session对象
-        SqlSession session = MyBatisUtil.getFactory().openSession();
-        //获取dao对象
-        PartyMemberDao dao = session.getMapper(PartyMemberDao.class);
 
         //获取party_member表中的主键列
-        List<String> allNums = dao.findAllNums();
+        List<String> allNums =partyMemberDao.findAllNums();
         //获取developer表中的主键列
-        List<String> allNumsFromDeveloper = dao.findAllNumsFromDeveloper();
+        List<String> allNumsFromDeveloper = partyMemberDao.findAllNumsFromDeveloper();
 
         boolean isUpdate = false;
         //判断是否存在外键，没有外键则条件不成立，停止录入
@@ -63,16 +69,14 @@ public class PartyMemberInfoEntryServiceImpl implements InfoEntryService {
         //判断采用更新还是插入操作
         if (isUpdate){
             //更新操作
-            updateNum = dao.updatePartyMemberList(partyMemberList);
+            updateNum = partyMemberDao.updatePartyMemberList(partyMemberList);
         }else {
             //插入操作
-            addNum = dao.addPartyMemberList(partyMemberList);
+            addNum = partyMemberDao.addPartyMemberList(partyMemberList);
             //第一次插入数据，对student表的发展状态进行更新
-            updateStageNum = dao.updateStage(partyMemberList);
+            updateStageNum = partyMemberDao.updateStage(partyMemberList);
         }
 
-        session.commit();
-        session.close();
 
         if (updateNum > 0){
             return ResultInfo.successInfo("成功更新"+updateNum+"条数据");

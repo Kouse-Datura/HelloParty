@@ -1,12 +1,12 @@
-package edu.gduf.service.impl;
+package edu.gduf.service.impl.infoentry;
 
 import edu.gduf.dao.ActivistDao;
 import edu.gduf.domain.Activist;
 import edu.gduf.domain.ResultInfo;
 import edu.gduf.service.InfoEntryService;
-import edu.gduf.utils.MyBatisUtil;
 import edu.gduf.utils.PoiUtil;
-import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,16 +17,23 @@ import java.util.List;
  * @author 古市
  * @date 2020-03-29 19:05
  **/
+@Repository
 public class ActivistInfoEntryServiceImpl implements InfoEntryService {
+
+
+    private ActivistDao dao;
+
+    @Autowired
+    public void setDao(ActivistDao dao) {
+        this.dao = dao;
+    }
+
     @Override
     public ResultInfo informationEntry(String filepath) {
         //获取文件的数据列表
         List<List<String>> lists = PoiUtil.readFile(filepath);
         //解析数据列表生成对象列表
         List<Activist> activistList = readList(lists);
-        //获取dao对象
-        SqlSession session = MyBatisUtil.getFactory().openSession();
-        ActivistDao dao = session.getMapper(ActivistDao.class);
         //从activist表中获取主键列num，防止主键冲突
         List<String> activistNums = dao.findAllNums();
         //从applicant表中获取主键列，防止外键冲突
@@ -43,8 +50,6 @@ public class ActivistInfoEntryServiceImpl implements InfoEntryService {
         //更新student表中发展阶段的状态
         int j = dao.updateStage(activistList);
 
-        session.commit();
-        session.close();
         if (i == j){
             return ResultInfo.successInfo("成功录入"+i+"条数据");
         }

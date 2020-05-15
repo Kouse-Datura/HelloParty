@@ -21,4 +21,42 @@
     <select id="findAll" resultMap="activistMap">
         select * from activist;
     </select>
+
+    <!--  根据学号查询信息 -->
+    <select id="findActivistByNum" resultMap="activistMap">
+        select * from activist where num = #{num}
+    </select>
+    
+    <select id="findAllNums" resultType="String">
+        select num from activist;
+    </select>
+
+    <select id="findAllNumsFromApplicant" resultType="String">
+        select num from applicant;
+    </select>
+
+    <insert id="addActivistList" parameterType="java.util.List">
+        insert into activist (num, activist_occupation, identifying_activist, directing_score,
+                              composite_ranking, agree, disagree,
+                              abstain, thinking_report, need_num,
+                              attend_num, superintendent1, superintendent2, cultivate_contacts,
+                              which_volume, inspect_time)
+                              VALUES
+        <foreach collection="list" separator="," item="activist">
+            (#{activist.num},#{activist.activistOccupation},#{activist.identifyingActivist},
+             #{activist.directingScore},#{activist.compositeRanking},#{activist.agree},#{activist.disagree},
+             #{activist.abstain},#{activist.thinkingReport},#{activist.needNum},
+             #{activist.attendNum},#{activist.superintendent1},#{activist.superintendent2},
+             #{activist.cultivateContacts},#{activist.whichVolume},#{activist.inspectTime}
+             )
+        </foreach>
+    </insert>
+
+    <update id="updateStage" parameterType="java.util.List">
+        update student set stage_of_development = 'Activist' where num in
+        <foreach collection="list" open="(" close=")" separator="," item="activist">
+            #{activist.num}
+        </foreach>
+    </update>
+    
 </mapper>

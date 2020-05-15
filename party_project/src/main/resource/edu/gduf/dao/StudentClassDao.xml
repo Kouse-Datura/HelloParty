@@ -13,4 +13,10 @@
     <select id="findAll" resultMap="studentClassMap">
         select * from student_class;
     </select>
+
+    <select id="findClassByNum" resultMap="studentClassMap">
+        select * from student_class where class_num = #{num};
+    </select>
+
+
 </mapper>

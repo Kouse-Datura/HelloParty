@@ -1,65 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="party_project:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1ee691f8-2d70-4f8c-80f7-a50d41a7ad66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/ActivistDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/ApplicantDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/DeveloperDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/InspectorDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/MarkDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/PartyMemberDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/StudentClassDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Activist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Applicant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Developer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Inspector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Mark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/PartyMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/StudentClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/utils/MyBatisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/ActivistDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/ApplicantDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/DeveloperDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/InspectorDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/MarkDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/PartyMemberDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/StudentClassDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/StudentDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resource/mybatis_config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ActivistDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApplicantDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/InspectorDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MarkDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PartyMemberDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StudentClassDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StudentDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/gduf/dao/StudentDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/gduf/domain/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/gduf/utils/DruidUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/edu/gduf/utils/MyBatisUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mybatis_config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/party.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/StudentDaoTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/SignInFormGenerateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/political/PoliticalElectronicGenerateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/political/PoliticalSituationGenerateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/publicity/FifthPublicityGenerateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/publicity/FirstPublicityGenerateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/publicity/FourthPublicityGenerateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/publicity/SecondPublicityGenerateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/publicity/ThirdPublicityGenerateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/record/ActivistRecordGenerateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/record/DeveloperRecordGenerateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/record/PartyMemberRecordGenerateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/utils/DataUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/web/controller/ElectricController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/web/controller/InspectorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/web/controller/PublicityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/web/controller/RecordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/web/controller/SignController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/web/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/model/inspect_report_model.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/model/political_electronic_table.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/model/political_situation_table.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/model/publicity/fifth_publicity_model.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/model/publicity/first_publicity_model.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/model/publicity/fourth_publicity_model.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/model/publicity/second_publicity_model.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/model/publicity/third_publicity_model.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/model/record/activist_record_model.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/model/record/developer_record_table.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/model/record/partymember_record_table.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/model/sign_in_form_model.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/picture/161543136.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/picture/171543116.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/springmvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resource/temp_file/test.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/HelloParty.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/HelloParty.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2b2fbe76-c5d4-4d93-89fa-f38fa886cc10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2b2fbe76-c5d4-4d93-89fa-f38fa886cc10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2b2fbe76-c5d4-4d93-89fa-f38fa886cc10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/party_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/party_project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axis.log" beforeDir="false" afterPath="$PROJECT_DIR$/axis.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/DruidUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/utils/DruidUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/party.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/party.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/party_database.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/DruidUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/ActivistDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/ActivistDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/ApplicantDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/ApplicantDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/DeveloperDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/DeveloperDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/InspectorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/InspectorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/MarkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/MarkDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/PartyMemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/PartyMemberDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/StudentClassDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/StudentClassDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/StudentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/dao/util/StudentInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Activist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Activist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Applicant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Applicant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Developer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Developer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Inspector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Inspector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Mark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Mark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/PartyMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/PartyMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/ResultInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/ResultInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/domain/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/enums/FileTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/enums/FileTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/service/FileGenerateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/FileGenerateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/service/InfoEntryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/InfoEntryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/service/PersonalShowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/PersonalShowService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/InspectReportGenerateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/InspectReportGenerateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/PersonalShowServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/PersonalShowServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/infoentry/ActivistInfoEntryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/infoentry/ActivistInfoEntryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/infoentry/ApplicantInfoEntryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/infoentry/ApplicantInfoEntryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/infoentry/DeveloperInfoEntryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/infoentry/DeveloperInfoEntryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/infoentry/InspectorInfoEntryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/infoentry/InspectorInfoEntryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/infoentry/MarkInfoEntryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/infoentry/MarkInfoEntryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/infoentry/PartyMemberInfoEntryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/infoentry/PartyMemberInfoEntryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/infoentry/StudentInfoEntryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/service/impl/infoentry/StudentInfoEntryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/utils/DruidUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/utils/MyBatisUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gduf/utils/PoiUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gduf/utils/PoiUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/ActivistDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/ActivistDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/ApplicantDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/ApplicantDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/DeveloperDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/DeveloperDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/InspectorDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/InspectorDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/MarkDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/MarkDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/PartyMemberDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/PartyMemberDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/StudentClassDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/StudentClassDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/StudentDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/edu/gduf/dao/StudentDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/mybatis_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mybatis_config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/spring_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/spring_config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/temp_file/1XXXXXX班第一次考察报告.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/temp_file/PartyMember.2020.04.04.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/temp_file/developer2020.04.03.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/temp_file/mark.2020.04.04.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/temp_file/temp_data.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/temp_file/temp_data.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/temp_file/test.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/temp_file/test.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/temp_file/入党申请人录入2020.03.29.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/temp_file/积极分子录入2020.03.31.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/temp_file/考察对象2020.04.01.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ActivistDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ApplicantDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DeveloperDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/InspectorDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MarkDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PartyMemberDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ResultInfoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StudentClassDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StudentDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/PersonalShowTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/temp_file/1XXXXXX班第一次考察报告.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/temp_file/1XXXXXX班第一次考察报告.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/temp_file/temp_data.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/temp_file/temp_data.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/dao/ActivistDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/dao/ActivistDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/dao/ActivistDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/dao/ActivistDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/dao/ApplicantDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/dao/ApplicantDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/dao/ApplicantDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/dao/ApplicantDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/dao/DeveloperDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/dao/DeveloperDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/dao/DeveloperDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/dao/DeveloperDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/dao/InspectorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/dao/InspectorDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/dao/InspectorDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/dao/InspectorDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/dao/MarkDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/dao/MarkDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/dao/MarkDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/dao/MarkDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/dao/PartyMemberDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/dao/PartyMemberDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/dao/PartyMemberDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/dao/PartyMemberDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/dao/StudentClassDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/dao/StudentClassDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/dao/StudentClassDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/dao/StudentClassDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/dao/StudentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/dao/StudentDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/dao/StudentDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/domain/Activist.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/domain/Activist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/domain/Applicant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/domain/Applicant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/domain/Developer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/domain/Developer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/domain/Inspector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/domain/Inspector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/domain/Mark.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/domain/Mark.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/domain/PartyMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/domain/PartyMember.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/domain/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/domain/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/domain/StudentClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/gduf/domain/StudentClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/utils/DruidUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/gduf/utils/MyBatisUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis_config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/party.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ActivistDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ApplicantDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/InspectorDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MarkDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PartyMemberDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StudentClassDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StudentDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -88,6 +192,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="party_database: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="party_database@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="party_database: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="mark: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -95,7 +206,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Enum" />
         <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -110,11 +223,18 @@
       </set>
     </option>
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\Java\thirdclass" />
-        <option name="mavenHome" value="D:/Java/maven/apache-maven-3.6.1" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../maven/apache-maven-3.6.1" />
         <option name="userSettingsFile" value="D:\Java\maven\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -138,11 +258,13 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580796671954" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resource" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resource/model/record" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -151,80 +273,211 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\Git\git_repository\HelloParty\party_project\src\main\resource\model\record" />
+      <recent name="D:\Java\Git\git_repository\HelloParty\party_project\src\main\resource\model\publicity" />
+      <recent name="D:\Java\Git\git_repository\HelloParty\party_project\target\party_project\WEB-INF\classes\temp_file" />
       <recent name="D:\IDEA_File\party_project\src\main" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.gduf.service.impl" />
+      <recent name="edu.gduf.web.controller" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\git_repository\HelloParty\party_project\src\main\resource" />
-      <recent name="D:\IDEA_File\party_project\src\main\resource" />
+      <recent name="D:\Java\Git\git_repository\HelloParty\party_project\src\main\resource\model\record" />
+      <recent name="D:\Java\Git\git_repository\HelloParty\party_project\src\main\resource\model" />
+      <recent name="D:\Java\Git\git_repository\HelloParty\party_project\src\main\resource" />
+      <recent name="D:\Java\Git\git_repository\HelloParty\party_project\target\party_project\WEB-INF\classes\output" />
+      <recent name="D:\Java\Git\git_repository\HelloParty\party_project\src\main\resource\picture" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PartyMemberDaoTest.test">
-    <configuration name="ActivistDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Tomcat Server.tomcat">
+    <configuration name="ThirdPublicityGenerateServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.gduf.service.impl.publicity.ThirdPublicityGenerateServiceImpl" />
       <module name="party_project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ActivistDaoTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.gduf.service.impl.publicity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InspectReport.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="party_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="filegenerate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="filegenerate" />
+      <option name="MAIN_CLASS_NAME" value="filegenerate.InspectReport" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InspectorDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonalShowTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="party_project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="InspectorDaoTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.PersonalShowTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MarkDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentDaoTest.findAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="party_project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MarkDaoTest" />
+      <option name="MAIN_CLASS_NAME" value="StudentDaoTest" />
+      <option name="METHOD_NAME" value="findAllTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThirdPublicity.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="party_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="filegenerate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="filegenerate" />
+      <option name="MAIN_CLASS_NAME" value="filegenerate.ThirdPublicity" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PartyMemberDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="party_project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PartyMemberDaoTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.17" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/party_project_war_exploded/" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="party_project:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/party_project_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_party_project" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52818" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="party_project:war exploded" />
+        </option>
       </method>
     </configuration>
-    <configuration name="StudentClassDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="party_project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StudentClassDaoTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.ThirdPublicityGenerateServiceImpl" />
+      <item itemvalue="JUnit.InspectReport.test" />
+      <item itemvalue="JUnit.ThirdPublicity.test" />
+      <item itemvalue="JUnit.StudentDaoTest.findAllTest" />
+      <item itemvalue="JUnit.PersonalShowTest.test" />
+      <item itemvalue="Tomcat Server.tomcat" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PartyMemberDaoTest.test" />
-        <item itemvalue="JUnit.MarkDaoTest.test" />
-        <item itemvalue="JUnit.InspectorDaoTest.test" />
-        <item itemvalue="JUnit.ActivistDaoTest.test" />
-        <item itemvalue="JUnit.StudentClassDaoTest.test" />
+        <item itemvalue="JUnit.PersonalShowTest.test" />
+        <item itemvalue="JUnit.StudentDaoTest.findAllTest" />
+        <item itemvalue="JUnit.ThirdPublicity.test" />
+        <item itemvalue="Application.ThirdPublicityGenerateServiceImpl" />
+        <item itemvalue="JUnit.InspectReport.test" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -255,6 +508,71 @@
       <workItem from="1583029640382" duration="20165000" />
       <workItem from="1583138306697" duration="599000" />
       <workItem from="1583218870414" duration="4885000" />
+      <workItem from="1584518921445" duration="1896000" />
+      <workItem from="1585291272319" duration="4475000" />
+      <workItem from="1585310736030" duration="445000" />
+      <workItem from="1585311192099" duration="568000" />
+      <workItem from="1585311769464" duration="466000" />
+      <workItem from="1585314193241" duration="433000" />
+      <workItem from="1585364887923" duration="14605000" />
+      <workItem from="1585448492747" duration="3416000" />
+      <workItem from="1585454188606" duration="20332000" />
+      <workItem from="1585536253327" duration="679000" />
+      <workItem from="1585657113158" duration="9985000" />
+      <workItem from="1585708639632" duration="201000" />
+      <workItem from="1585747808170" duration="8460000" />
+      <workItem from="1585794094044" duration="10730000" />
+      <workItem from="1585881163694" duration="175000" />
+      <workItem from="1585900085934" duration="2986000" />
+      <workItem from="1585908897467" duration="10755000" />
+      <workItem from="1585963368857" duration="9159000" />
+      <workItem from="1585992627985" duration="767000" />
+      <workItem from="1585993478120" duration="28000" />
+      <workItem from="1586010288306" duration="3747000" />
+      <workItem from="1586058640384" duration="4511000" />
+      <workItem from="1586157721398" duration="3531000" />
+      <workItem from="1586163257169" duration="5530000" />
+      <workItem from="1586698184892" duration="805000" />
+      <workItem from="1586862705330" duration="83000" />
+      <workItem from="1586921525175" duration="144000" />
+      <workItem from="1586961939288" duration="2444000" />
+      <workItem from="1587186303891" duration="21000" />
+      <workItem from="1587622612025" duration="26071000" />
+      <workItem from="1587695835371" duration="122000" />
+      <workItem from="1587728670994" duration="822000" />
+      <workItem from="1587730792029" duration="779000" />
+      <workItem from="1587791922655" duration="6535000" />
+      <workItem from="1587814334612" duration="11247000" />
+      <workItem from="1587880407284" duration="42000" />
+      <workItem from="1587894271253" duration="3015000" />
+      <workItem from="1587955624294" duration="537000" />
+      <workItem from="1587957674368" duration="23000" />
+      <workItem from="1587957731098" duration="300000" />
+      <workItem from="1587991651227" duration="11989000" />
+      <workItem from="1588061715506" duration="789000" />
+      <workItem from="1588063267884" duration="3303000" />
+      <workItem from="1588068356539" duration="7507000" />
+      <workItem from="1588089616626" duration="48000" />
+      <workItem from="1588090308445" duration="1154000" />
+      <workItem from="1588144220047" duration="27000" />
+      <workItem from="1588161816630" duration="63000" />
+      <workItem from="1588166565552" duration="5526000" />
+      <workItem from="1588226192291" duration="16000" />
+      <workItem from="1588240985158" duration="1627000" />
+      <workItem from="1588253542978" duration="467000" />
+      <workItem from="1588254141748" duration="387000" />
+      <workItem from="1588258411161" duration="9385000" />
+      <workItem from="1588311843019" duration="6331000" />
+      <workItem from="1588521081304" duration="6091000" />
+      <workItem from="1588565968606" duration="11388000" />
+      <workItem from="1588678831486" duration="686000" />
+      <workItem from="1588694411741" duration="810000" />
+      <workItem from="1588755339903" duration="490000" />
+      <workItem from="1588764875662" duration="86000" />
+      <workItem from="1588765366697" duration="7151000" />
+      <workItem from="1589105012470" duration="738000" />
+      <workItem from="1589188272787" duration="13587000" />
+      <workItem from="1589368789327" duration="89000" />
     </task>
     <servers />
   </component>
@@ -262,28 +580,61 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="80" key="#HTTP_Proxy" timestamp="1588771618146">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="80" key="#HTTP_Proxy/0.0.1536.824@0.0.1536.824" timestamp="1588771618146" />
     <state x="361" y="71" key="#Inspections" timestamp="1582969986920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1582969986920" />
+    <state x="361" y="71" key="#Project_Structure" timestamp="1585748306952">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1585748306952" />
     <state x="361" y="71" key="#SQL_Dialects" timestamp="1582445725552">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#SQL_Dialects/0.0.1536.824@0.0.1536.824" timestamp="1582445725552" />
-    <state x="499" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582973814723">
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586162464130">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1586162464130" />
+    <state x="499" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585665572086">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582973814723" />
-    <state x="574" y="114" key="#com.intellij.ide.util.MemberChooser" timestamp="1583049684457">
+    <state x="499" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1585665572086" />
+    <state x="574" y="114" key="#com.intellij.ide.util.MemberChooser" timestamp="1589200928243">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="114" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583049684457" />
     <state x="574" y="114" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582978308692" />
-    <state x="574" y="114" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1583030950448" />
+    <state x="574" y="114" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1589200928243" />
+    <state x="614" y="302" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584520359129">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="614" y="302" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1584520359129" />
+    <state x="349" y="68" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1584520354194">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="68" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.1536.824@0.0.1536.824" timestamp="1584520354194" />
     <state x="430" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1582971152509">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="430" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1582971152509" />
+    <state x="548" y="271" width="439" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1587623993209">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="271" width="439" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1587623993209" />
+    <state x="378" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585750165456">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="378" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1585750165456" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588772784852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1588772784852" />
     <state x="511" y="136" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1583220207117">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -292,76 +643,141 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="367" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582727407027" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1583219382479">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1586010618317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583219382479" />
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583030571882" />
-    <state width="1493" height="171" key="GridCell.Tab.0.bottom" timestamp="1583223771186">
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586010618317" />
+    <state width="1024" height="224" key="GridCell.Tab.0.bottom" timestamp="1589208069175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824/-1194.240.1194.794@0.0.1536.824" timestamp="1585909546181" />
     <state width="1493" height="171" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583223771186" />
     <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582981255177" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582994632031" />
-    <state width="1493" height="171" key="GridCell.Tab.0.center" timestamp="1583223771186">
+    <state width="1024" height="224" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589208069175" />
+    <state width="1024" height="224" key="GridCell.Tab.0.center" timestamp="1589208069175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824/-1194.240.1194.794@0.0.1536.824" timestamp="1585909546181" />
     <state width="1493" height="171" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583223771186" />
     <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582981255177" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582994632031" />
-    <state width="1493" height="171" key="GridCell.Tab.0.left" timestamp="1583223771186">
+    <state width="1024" height="224" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589208069175" />
+    <state width="1024" height="224" key="GridCell.Tab.0.left" timestamp="1589208069175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824/-1194.240.1194.794@0.0.1536.824" timestamp="1585909546181" />
     <state width="1493" height="171" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583223771186" />
     <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582981255176" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582994632031" />
-    <state width="1493" height="171" key="GridCell.Tab.0.right" timestamp="1583223771186">
+    <state width="1024" height="224" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589208069175" />
+    <state width="1024" height="224" key="GridCell.Tab.0.right" timestamp="1589208069175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824/-1194.240.1194.794@0.0.1536.824" timestamp="1585909546181" />
     <state width="1493" height="171" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583223771186" />
     <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582981255177" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582994632031" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1582994632032">
+    <state width="1024" height="224" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589208069175" />
+    <state width="1024" height="224" key="GridCell.Tab.1.bottom" timestamp="1589208069175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582980760119" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582994632032" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1582994632031">
+    <state width="1024" height="224" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589208069175" />
+    <state width="1024" height="224" key="GridCell.Tab.1.center" timestamp="1589208069175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582980760119" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582994632031" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1582994632031">
+    <state width="1024" height="224" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1589208069175" />
+    <state width="1024" height="224" key="GridCell.Tab.1.left" timestamp="1589208069175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582980760119" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582994632031" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1582994632031">
+    <state width="1024" height="224" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1589208069175" />
+    <state width="1024" height="224" key="GridCell.Tab.1.right" timestamp="1589208069175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582980760119" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582994632031" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1583219929612">
+    <state width="1024" height="224" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1589208069175" />
+    <state width="1024" height="224" key="GridCell.Tab.2.bottom" timestamp="1589208069175">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="224" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589208069175" />
+    <state width="1024" height="224" key="GridCell.Tab.2.center" timestamp="1589208069175">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="224" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1589208069175" />
+    <state width="1024" height="224" key="GridCell.Tab.2.left" timestamp="1589208069175">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="224" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1589208069175" />
+    <state width="1024" height="224" key="GridCell.Tab.2.right" timestamp="1589208069175">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="224" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1589208069175" />
+    <state width="1024" height="224" key="GridCell.Tab.5.bottom" timestamp="1588528438775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="224" key="GridCell.Tab.5.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588528438775" />
+    <state width="1024" height="224" key="GridCell.Tab.5.center" timestamp="1588528438775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="224" key="GridCell.Tab.5.center/0.0.1536.824@0.0.1536.824" timestamp="1588528438775" />
+    <state width="1024" height="224" key="GridCell.Tab.5.left" timestamp="1588528438775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="224" key="GridCell.Tab.5.left/0.0.1536.824@0.0.1536.824" timestamp="1588528438775" />
+    <state width="1024" height="224" key="GridCell.Tab.5.right" timestamp="1588528438775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="224" key="GridCell.Tab.5.right/0.0.1536.824@0.0.1536.824" timestamp="1588528438775" />
+    <state width="1024" height="224" key="GridCell.Tab.6.bottom" timestamp="1588528434897">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="224" key="GridCell.Tab.6.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588528434897" />
+    <state width="1024" height="224" key="GridCell.Tab.6.center" timestamp="1588528434896">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="224" key="GridCell.Tab.6.center/0.0.1536.824@0.0.1536.824" timestamp="1588528434896" />
+    <state width="1024" height="224" key="GridCell.Tab.6.left" timestamp="1588528434895">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="224" key="GridCell.Tab.6.left/0.0.1536.824@0.0.1536.824" timestamp="1588528434895" />
+    <state width="1024" height="224" key="GridCell.Tab.6.right" timestamp="1588528434896">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="224" key="GridCell.Tab.6.right/0.0.1536.824@0.0.1536.824" timestamp="1588528434896" />
+    <state x="285" y="77" key="Maven.ArtifactSearchDialog" timestamp="1587634885848">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="285" y="77" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1587634885848" />
+    <state x="444" y="0" key="SettingsEditor" timestamp="1589201481434">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583219929612" />
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583030593001" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1583218876987">
+    <state x="444" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589201481434" />
+    <state x="565" y="190" key="chooseDestDirectoryDialog" timestamp="1585311351611">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="565" y="190" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1585311351611" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1589368791899">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1194.240.1194.794@0.0.1536.824" timestamp="1587956157665" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583218876987" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1804.1220@0.0.1536.824" timestamp="1582888254503" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583139467506" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1589368791899" />
     <state x="485" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1582732059982">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1582732059982" />
-    <state x="1912" y="-8" width="1193" height="611" maximized="true" key="dock-window-1" timestamp="1583220887689">
-      <screen x="1920" y="0" width="1194" height="794" />
+    <state x="399" y="49" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1588771746194">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="399" y="49" key="com.intellij.javaee.MapExternalResourceDialog/0.0.1536.824@0.0.1536.824" timestamp="1588771746194" />
+    <state x="-6" y="0" width="781" height="830" key="dock-window-1" timestamp="1588226213376">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="1912" y="-8" width="1193" height="611" maximized="true" key="dock-window-1/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583220887689" />
     <state x="-6" y="0" width="781" height="830" key="dock-window-1/0.0.1536.824/1920.0.1592.1072@0.0.1536.824" timestamp="1582976604739" />
-    <state x="5" y="8" width="1201" height="808" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1583044313878" />
+    <state x="-6" y="0" width="781" height="830" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1588226213376" />
     <state x="2087" y="88" width="1193" height="611" key="dock-window-2" timestamp="1583221144809">
       <screen x="1920" y="0" width="1194" height="794" />
     </state>
@@ -371,14 +787,31 @@
       <screen x="1920" y="0" width="1194" height="794" />
     </state>
     <state x="1920" y="44" width="1201" height="611" key="dock-window-3/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583056890001" />
-    <state x="178" y="108" key="new project wizard" timestamp="1582881238809">
+    <state x="499" y="177" key="extract.method.dialog" timestamp="1587821127434">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="178" y="108" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1582881238809" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1583223721795">
+    <state x="499" y="177" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1587821127434" />
+    <state x="178" y="108" key="new project wizard" timestamp="1589368926415">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="108" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1589368926415" />
+    <state x="470" y="40" key="refactoring.ChangeSignatureDialog" timestamp="1589193818634">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="470" y="40" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1589193818634" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1588063305029">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1588063305029" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1589105041283">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1194.794@0.0.1536.824" timestamp="1583223721795" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1589105041283" />
+    <state x="447" y="96" key="spring file set editor" timestamp="1589201474843">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="447" y="96" key="spring file set editor/0.0.1536.824@0.0.1536.824" timestamp="1589201474843" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

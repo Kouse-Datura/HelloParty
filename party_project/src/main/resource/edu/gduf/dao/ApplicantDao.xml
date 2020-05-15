@@ -15,4 +15,33 @@
     <select id="findAll" resultMap="applicantMap">
         select * from applicant;
     </select>
+
+    <!--  根据学号查询信息 -->
+    <select id="findApplicantByNum" resultMap="applicantMap">
+        select * from applicant where num = #{applicant.num}
+    </select>
+
+    <select id="findAllNumsFromStudent" resultType="String">
+        select num from student;
+    </select>
+
+    <select id="findAllNums" resultType="String">
+        select num from applicant;
+    </select>
+
+    <insert id="addApplicantList" parameterType="java.util.List">
+        insert into applicant (num, time_of_application, speaker, talk_time, applicant_occupation, is_adult) VALUES
+        <foreach collection="list" item="applicant" separator=",">
+            (#{applicant.num}, #{applicant.timeOfApplication}, #{applicant.speaker}, #{applicant.talkTime}, #{applicant.applicantOccupation}, #{applicant.isAdult})
+        </foreach>
+    </insert>
+
+    <update id="updateStage" parameterType="java.util.List">
+        update student set stage_of_development = 'Applicant' where num in
+        <foreach collection="list" open="(" close=")" separator="," item="applicant">
+            #{applicant.num}
+        </foreach>
+    </update>
+
+
 </mapper>

@@ -1,12 +1,12 @@
-package edu.gduf.service.impl;
+package edu.gduf.service.impl.infoentry;
 
 import edu.gduf.dao.InspectorDao;
 import edu.gduf.domain.Inspector;
 import edu.gduf.domain.ResultInfo;
 import edu.gduf.service.InfoEntryService;
-import edu.gduf.utils.MyBatisUtil;
 import edu.gduf.utils.PoiUtil;
-import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,9 +29,20 @@ import java.util.List;
  * @author 古市
  * @date 2020-04-01 22:05
  **/
+@Service
 public class InspectorInfoEntryServiceImpl implements InfoEntryService {
 
-    int updateStageNum = 0;
+    private InspectorDao dao;
+
+    /**
+     * 更新发展阶段的行数
+     */
+    private int updateStageNum = 0;
+
+    @Autowired
+    public void setDao(InspectorDao dao) {
+        this.dao = dao;
+    }
 
     @Override
     public ResultInfo informationEntry(String filepath) {
@@ -39,10 +50,7 @@ public class InspectorInfoEntryServiceImpl implements InfoEntryService {
         List<List<String>> lists = PoiUtil.readFile(filepath);
         //解析数据列表
         List<Inspector> inspectorList = readList(lists);
-        //获取session对象
-        SqlSession session = MyBatisUtil.getFactory().openSession();
-        //获取dao对象
-        InspectorDao dao = session.getMapper(InspectorDao.class);
+
         //查找activist中的nums列，确保外键存在
         List<String> numsFromActivist = dao.findAllNumsFromActivist();
         for (Inspector inspector : inspectorList) {
@@ -99,9 +107,6 @@ public class InspectorInfoEntryServiceImpl implements InfoEntryService {
             }
         }
 
-        //提交事务
-        session.commit();
-        session.close();
 
         if (updateNum > 0){
             return ResultInfo.successInfo("成功更新"+updateNum+"条数据");
@@ -144,14 +149,7 @@ public class InspectorInfoEntryServiceImpl implements InfoEntryService {
             inspector.setAdvantage(list.get(4));
             inspector.setDisadvantage(list.get(5));
             inspector.setAward(list.get(6));
-
-            String s2 = list.get(7);
-            if (!"".equals(s2)){
-                //如果不是空字符串则set，否则不进行赋值
-                inspector.setCompetitiveScore(Double.parseDouble(s2));
-            }
-
-            inspector.setInspectorOccupation(list.get(8));
+            inspector.setInspectorOccupation(list.get(7));
             inspectorList.add(inspector);
         }
         return inspectorList;

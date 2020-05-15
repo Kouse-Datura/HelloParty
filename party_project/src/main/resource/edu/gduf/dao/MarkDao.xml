@@ -17,4 +17,22 @@
         select * from mark;
     </select>
 
+    <!--  根据学号查询信息 -->
+    <select id="findMarkByNum" resultMap="markMap">
+        select * from mark where num = #{num} order by semester desc
+    </select>
+
+    <insert id="addMarkList" parameterType="java.util.List">
+        insert into mark (num, semester, discipline_inspection, composite_score, composite_ranking, academic_score, academic_ranking)
+        values
+        <foreach collection="list" item="item" separator="," >
+            (
+             #{item.num},#{item.semester},#{item.disciplineInspection},
+             #{item.compositeScore},#{item.compositeRanking},#{item.academicScore},
+             #{item.academicRanking}
+            )
+        </foreach>
+    </insert>
+
+
 </mapper>

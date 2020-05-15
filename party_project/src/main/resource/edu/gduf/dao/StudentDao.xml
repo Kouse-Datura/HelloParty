@@ -11,11 +11,59 @@
         <result property="identityCard" column="identity_card"/>
         <result property="degreeOfEducation" column="degree_of_education"/>
         <result property="paliticsStatus" column="palitics_status"/>
-        <result property="stageOfDevelopment" column="stageOfDevelopment"/>
+        <result property="stageOfDevelopment" column="stage_of_development"/>
         <result property="admissionTime" column="admission_time"/>
+        <result property="partyBranch" column="party_branch"/>
+        <association property="applicant" javaType="Applicant" column="num" 
+                     select="edu.gduf.dao.ApplicantDao.findApplicantByNum"/>
+        <association property="activist" javaType="Activist" column="num"
+                     select="edu.gduf.dao.ActivistDao.findActivistByNum"/>
+        <association property="inspector" javaType="Inspector" column="num"
+                     select="edu.gduf.dao.InspectorDao.findInspectorByNum"/>
+        <association property="developer" javaType="Developer" column="num"
+                     select="edu.gduf.dao.DeveloperDao.findDeveloperByNum"/>
+        <association property="partyMember" javaType="PartyMember" column="num"
+                     select="edu.gduf.dao.PartyMemberDao.findPartyMemberByNum"/>
+        <association property="studentClass" javaType="StudentClass" column="class_num"
+                     select="edu.gduf.dao.StudentClassDao.findClassByNum"/>
+        <collection property="markList" ofType="Mark" column="num"
+                    select="edu.gduf.dao.MarkDao.findMarkByNum"/>
     </resultMap>
+
+    
     <!-- 查询所有 -->
     <select id="findAll" resultMap="studentMap">
         select * from student;
     </select>
+
+    <select id="findStudentByNum" resultMap="studentMap">
+        select * from student where num = #{snum}
+    </select>
+
+    <insert id="addStudentList" parameterType="java.util.List" >
+        insert into student(num, class_num, name, sex, nation, native,
+                            telephone, identity_card, birth, degree_of_education,
+                            palitics_status, stage_of_development,
+                            admission_time, dormitory, party_branch)
+                            values
+                                   <foreach collection="list" item="student" separator=",">
+                                       (
+                                        #{student.num}, #{student.classNum}, #{student.name},  #{student.sex}, #{student.nation},
+                                       #{student.studentNative}, #{student.telephone}, #{student.identityCard}, #{student.birth}, #{student.degreeOfEducation},
+                                       #{student.paliticsStatus}, #{student.stageOfDevelopment}, #{student.admissionTime}, #{student.dormitory},#{student.partyBranch}
+                                       )
+                                   </foreach>
+    </insert>
+
+    <select id="findAllNums" resultType="int">
+        select num from student;
+    </select>
+
+    <select id="findPartInfoByList" resultMap="studentMap" parameterType="java.util.List">
+        select name,class_num,telephone from student where num in
+        <foreach collection="list" item="s" separator="," open="(" close=")">
+            #{s}
+        </foreach>
+    </select>
+    
 </mapper>

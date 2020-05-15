@@ -1,6 +1,7 @@
 package edu.gduf.dao;
 
 import edu.gduf.domain.StudentClass;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
  * @author 古市
  * @date 2020-03-01 11:06
  **/
+@Repository
 public interface StudentClassDao {
 
     /**
@@ -17,5 +19,12 @@ public interface StudentClassDao {
      * @return student_class表中数据的集合
      */
     List<StudentClass> findAll();
+
+    /**
+     * 通过班级号查询相应的班级信息
+     * @param classNum 班级号
+     * @return 学生班级对象
+     */
+    StudentClass findClassByNum(String classNum);
 
 }

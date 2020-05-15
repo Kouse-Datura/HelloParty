@@ -1,12 +1,12 @@
-package edu.gduf.service.impl;
+package edu.gduf.service.impl.infoentry;
 
 import edu.gduf.dao.StudentDao;
 import edu.gduf.domain.ResultInfo;
 import edu.gduf.domain.Student;
 import edu.gduf.service.InfoEntryService;
-import edu.gduf.utils.MyBatisUtil;
 import edu.gduf.utils.PoiUtil;
-import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,8 +17,15 @@ import java.util.List;
  * @author 古市
  * @date 2020-03-28 11:15
  **/
+@Service
 public class StudentInfoEntryServiceImpl implements InfoEntryService {
 
+    private StudentDao studentDao;
+
+    @Autowired
+    public void setStudentDao(StudentDao dao) {
+        this.studentDao = dao;
+    }
 
 
     @Override
@@ -29,21 +36,17 @@ public class StudentInfoEntryServiceImpl implements InfoEntryService {
         //解析列表生成student对象列表
         List<Student> studentList = readList(lists);
 
-        //获取dao接口
-        SqlSession session = MyBatisUtil.getFactory().openSession();
-        StudentDao dao = session.getMapper(StudentDao.class);
+
 
         //判断是否存在重复主键
-        List<Integer> allNum = dao.findAllNums();
+        List<Integer> allNum = studentDao.findAllNums();
         for (Student student : studentList) {
             if (allNum.contains(student.getNum())){
                 return ResultInfo.failInfo("存在重复的学号" + student.getNum() + ",请进行检查");
             }
         }
 
-        int i = dao.addStudentList(studentList);
-        session.commit();
-        session.close();
+        int i = studentDao.addStudentList(studentList);
 
         return ResultInfo.successInfo("成功录入"+ i +"条数据");
     }
@@ -53,7 +56,7 @@ public class StudentInfoEntryServiceImpl implements InfoEntryService {
         for (List<String> list : lists) {
             Student student = new Student();
             //设置student对象的值
-            student.setNum(Integer.parseInt(list.get(0)));
+            student.setNum(list.get(0));
             student.setClassNum(list.get(1));
             student.setName(list.get(2));
             student.setSex(list.get(3));
@@ -67,6 +70,7 @@ public class StudentInfoEntryServiceImpl implements InfoEntryService {
             student.setStageOfDevelopment(list.get(11));
             student.setAdmissionTime(list.get(12));
             student.setDormitory(list.get(13));
+            student.setPartyBranch(list.get(14));
             studentList.add(student);
         }
         return studentList;
