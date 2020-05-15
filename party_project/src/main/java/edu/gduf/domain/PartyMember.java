@@ -1,14 +1,13 @@
 package edu.gduf.domain;
 
 import java.io.Serializable;
-import java.util.Date;
 
 /**
  * Demo Class
  * 党员对象
  * 对应数据库中的party_member表
  * @author 古市
- * @date 2020-03-01 15:55
+ * @String 2020-03-01 15:55
  **/
 public class PartyMember implements Serializable {
 
@@ -23,15 +22,15 @@ public class PartyMember implements Serializable {
     /**
      * 志愿书填写时间
      */
-    private Date applicationTime;
+    private String applicationTime;
     /**
      * 入党时间
      */
-    private Date enterTime;
+    private String enterTime;
     /**
      * 转正时间
      */
-    private Date positiveTime;
+    private String positiveTime;
     /**
      * 是否为正式党员
      */
@@ -53,27 +52,27 @@ public class PartyMember implements Serializable {
         this.applicationNum = applicationNum;
     }
 
-    public Date getApplicationTime() {
+    public String getApplicationTime() {
         return applicationTime;
     }
 
-    public void setApplicationTime(Date applicationTime) {
+    public void setApplicationTime(String applicationTime) {
         this.applicationTime = applicationTime;
     }
 
-    public Date getEnterTime() {
+    public String getEnterTime() {
         return enterTime;
     }
 
-    public void setEnterTime(Date enterTime) {
+    public void setEnterTime(String enterTime) {
         this.enterTime = enterTime;
     }
 
-    public Date getPositiveTime() {
+    public String getPositiveTime() {
         return positiveTime;
     }
 
-    public void setPositiveTime(Date positiveTime) {
+    public void setPositiveTime(String positiveTime) {
         this.positiveTime = positiveTime;
     }
 

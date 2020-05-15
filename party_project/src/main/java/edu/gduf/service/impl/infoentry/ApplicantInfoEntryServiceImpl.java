@@ -1,12 +1,12 @@
-package edu.gduf.service.impl;
+package edu.gduf.service.impl.infoentry;
 
 import edu.gduf.dao.ApplicantDao;
 import edu.gduf.domain.Applicant;
 import edu.gduf.domain.ResultInfo;
 import edu.gduf.service.InfoEntryService;
-import edu.gduf.utils.MyBatisUtil;
 import edu.gduf.utils.PoiUtil;
-import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,16 +17,23 @@ import java.util.List;
  * @author 古市
  * @date 2020-03-29 19:25
  **/
+@Service
 public class ApplicantInfoEntryServiceImpl implements InfoEntryService {
+
+    private ApplicantDao dao;
+
+    @Autowired
+    public void setDao(ApplicantDao dao) {
+        this.dao = dao;
+    }
+
     @Override
     public ResultInfo informationEntry(String filepath) {
         //获取文件的数据列表
         List<List<String>> lists = PoiUtil.readFile(filepath);
         //解析数据列表生成对象列表
         List<Applicant> applicantList = readList(lists);
-        //获取dao对象
-        SqlSession session = MyBatisUtil.getFactory().openSession();
-        ApplicantDao dao = session.getMapper(ApplicantDao.class);
+
         //从applicant表中获取num列数据，判断是否存在主键冲突，如果冲突停止录入，返回false
         List<String> applicantNums = dao.findAllNums();
         //从student表中获取主键，判断是否已经存在该学生的基本信息，如果不存在返回false，录入失败
@@ -42,9 +49,6 @@ public class ApplicantInfoEntryServiceImpl implements InfoEntryService {
 
         //更新student表中的发展阶段
         int j = dao.updateStage(applicantList);
-
-        session.commit();
-        session.close();
 
         if (i == j){
             return ResultInfo.successInfo("成功录入"+i+"条数据");

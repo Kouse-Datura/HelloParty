@@ -44,7 +44,7 @@ public class Mark implements Serializable {
     /**
      * 平均分排名
      */
-    private Double academicRanking;
+    private Integer academicRanking;
 
     public String getNum() {
         return num;
@@ -94,11 +94,11 @@ public class Mark implements Serializable {
         this.academicScore = academicScore;
     }
 
-    public Double getAcademicRanking() {
+    public Integer getAcademicRanking() {
         return academicRanking;
     }
 
-    public void setAcademicRanking(Double academicRanking) {
+    public void setAcademicRanking(Integer academicRanking) {
         this.academicRanking = academicRanking;
     }
 

@@ -1,7 +1,6 @@
 package edu.gduf.domain;
 
 import java.io.Serializable;
-import java.util.Date;
 
 /**
  * Demo Class
@@ -23,7 +22,7 @@ public class Activist implements Serializable {
     /**
      * 确定积极分子时间
      */
-    private Date identifyingActivist;
+    private String identifyingActivist;
     /**
      * 推优成绩
      */
@@ -93,11 +92,11 @@ public class Activist implements Serializable {
         this.activistOccupation = activistOccupation;
     }
 
-    public Date getIdentifyingActivist() {
+    public String getIdentifyingActivist() {
         return identifyingActivist;
     }
 
-    public void setIdentifyingActivist(Date identifyingActivist) {
+    public void setIdentifyingActivist(String identifyingActivist) {
         this.identifyingActivist = identifyingActivist;
     }
 

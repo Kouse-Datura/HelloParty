@@ -1,12 +1,12 @@
-package edu.gduf.service.impl;
+package edu.gduf.service.impl.infoentry;
 
 import edu.gduf.dao.DeveloperDao;
 import edu.gduf.domain.Developer;
 import edu.gduf.domain.ResultInfo;
 import edu.gduf.service.InfoEntryService;
-import edu.gduf.utils.MyBatisUtil;
 import edu.gduf.utils.PoiUtil;
-import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,18 +17,22 @@ import java.util.List;
  * @author 古市
  * @date 2020-04-03 21:05
  **/
+@Service
 public class DeveloperInfoEntryImpl implements InfoEntryService {
+
+    private DeveloperDao dao;
+
+    @Autowired
+    public void setDao(DeveloperDao dao) {
+        this.dao = dao;
+    }
+
     @Override
     public ResultInfo informationEntry(String filepath) {
         //解析文件
         List<List<String>> lists = PoiUtil.readFile(filepath);
         //解析字符串列表,生成对象
         List<Developer> developers = readList(lists);
-
-        //获取session对象
-        SqlSession session = MyBatisUtil.getFactory().openSession();
-        //获取dao对象
-        DeveloperDao dao = session.getMapper(DeveloperDao.class);
 
         //获取developer表中的主键列
         List<String> allNums = dao.findAllNums();
@@ -47,8 +51,6 @@ public class DeveloperInfoEntryImpl implements InfoEntryService {
         //更新student表中的状态
         int j = dao.updateStage(developers);
 
-        session.commit();
-        session.close();
         if (i == j){
             return ResultInfo.successInfo("成功录入"+i+"条数据");
         }
@@ -58,7 +60,6 @@ public class DeveloperInfoEntryImpl implements InfoEntryService {
 
     private List<Developer> readList(List<List<String>> lists){
         List<Developer> list = new ArrayList<>();
-        int count = 1;
         for (List<String> strings : lists) {
             Developer developer = new Developer();
             developer.setNum(strings.get(0));
@@ -70,6 +71,9 @@ public class DeveloperInfoEntryImpl implements InfoEntryService {
             developer.setMomName(strings.get(6));
             developer.setMomIdentity(strings.get(7));
             developer.setMomStatus(strings.get(8));
+            developer.setEnterLeagueTime(strings.get(9));
+            developer.setIntroducer1(strings.get(10));
+            developer.setIntroducer2(strings.get(11));
             list.add(developer);
         }
         return list;

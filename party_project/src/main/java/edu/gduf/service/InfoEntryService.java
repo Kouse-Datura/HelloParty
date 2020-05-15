@@ -1,5 +1,7 @@
 package edu.gduf.service;
 
+import edu.gduf.domain.ResultInfo;
+
 /**
  * Demo Class
  *
@@ -13,7 +15,7 @@ public interface InfoEntryService {
      * @param filepath 类路径下的文件路径
      * @return
      */
-    boolean informationEntry(String filepath);
+    ResultInfo informationEntry(String filepath);
 
 
 }

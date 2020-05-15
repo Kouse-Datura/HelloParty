@@ -1,7 +1,6 @@
 package edu.gduf.domain;
 
 import java.io.Serializable;
-import java.util.Date;
 
 /**
  * Demo Class
@@ -19,7 +18,7 @@ public class Applicant implements Serializable {
     /**
      * 入党申请时间
      */
-    private Date timeOfApplication;
+    private String timeOfApplication;
     /**
      * 谈话人
      */
@@ -27,7 +26,7 @@ public class Applicant implements Serializable {
     /**
      * 派人谈话时间
      */
-    private Date talkTime;
+    private String talkTime;
     /**
      * 申请人现任职务
      */
@@ -45,11 +44,11 @@ public class Applicant implements Serializable {
         this.num = num;
     }
 
-    public Date getTimeOfApplication() {
+    public String getTimeOfApplication() {
         return timeOfApplication;
     }
 
-    public void setTimeOfApplication(Date timeOfApplication) {
+    public void setTimeOfApplication(String timeOfApplication) {
         this.timeOfApplication = timeOfApplication;
     }
 
@@ -61,11 +60,11 @@ public class Applicant implements Serializable {
         this.speaker = speaker;
     }
 
-    public Date getTalkTime() {
+    public String getTalkTime() {
         return talkTime;
     }
 
-    public void setTalkTime(Date talkTime) {
+    public void setTalkTime(String talkTime) {
         this.talkTime = talkTime;
     }
 

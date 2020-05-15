@@ -3,9 +3,18 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+
     <properties>
 
     </properties>
+    <settings>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+    <typeAliases>
+        <package name="edu.gduf.domain"/>
+    </typeAliases>
     <!-- 配置环境 -->
     <environments default="mysql">
         <!-- 配置mysql环境 -->
@@ -13,11 +22,11 @@
             <!-- 配置事务 -->
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
                 <!-- 配置url 并设置编码方式防止执行写入操作时出现乱码 -->
-                <property name="url" value="jdbc:mysql://localhost:3306/party_database?characterEncoding=UTF-8&amp;"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/party_database?characterEncoding=UTF-8&amp;allowMultiQueries=true&amp;"/>
                 <property name="username" value="root"/>
-                <property name="password" value="0503"/>
+                <property name="password" value="0803"/>
             </dataSource>
         </environment>
     </environments>

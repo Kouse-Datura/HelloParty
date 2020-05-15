@@ -7,7 +7,6 @@
         <id property="num" column="num"/>
         <result property="partyScore" column="party_score"/>
         <result property="trainingTime" column="training_time"/>
-        <result property="competitiveScore" column="competitive_score"/>
         <result property="inspectorOccupation" column="inspector_occupation"/>
     </resultMap>
 
@@ -15,5 +14,63 @@
     <select id="findAll" resultMap="inspectorMap">
         select * from inspector;
     </select>
+
+    <!--  根据学号查询信息 -->
+    <select id="findInspectorByNum" resultMap="inspectorMap">
+        select * from inspector where num = #{num}
+    </select>
+
+    <insert id="addInspectorList" parameterType="java.util.List">
+        insert into inspector (num, party_score, training_time, experience, advantage, disadvantage,
+                               award, inspector_occupation) values
+                            <foreach collection="list" item="inspector" separator=",">
+                                (
+                                 #{inspector.num},#{inspector.partyScore},#{inspector.trainingTime},
+                                 #{inspector.experience},#{inspector.advantage},#{inspector.disadvantage},
+                                #{inspector.award},#{inspector.inspectorOccupation}
+                                )
+                            </foreach>
+    </insert>
+
+    <update id="updateInspectorList" parameterType="java.util.List">
+        <foreach collection="list" item="inspector" >
+            update inspector
+            <set>
+                advantage = #{inspector.advantage},experience=#{inspector.experience},disadvantage = #{inspector.disadvantage},award = #{inspector.award},
+                party_score = #{inspector.partyScore},
+                <if test="inspector.trainingTime != null and inspector.trainingTime != '' ">
+                    training_time = #{inspector.trainingTime},
+                </if>
+                <if test="inspector.inspectorOccupation != null and inspector.inspectorOccupation != '' ">
+                    inspector_occupation = #{inspector.inspectorOccupation},
+                </if>
+            </set>
+            where num = #{inspector.num};
+        </foreach>
+    </update>
+
+
+    <update id="updateStage" parameterType="java.util.List">
+        update student set stage_of_development = 'Inspector' where num in
+        <foreach collection="list" item="inspector" separator="," open="(" close=")">
+            #{inspector.num}
+        </foreach>
+    </update>
+
+<!--    从activist中获取num列-->
+    <select id="findAllNumsFromActivist" resultType="String">
+        select num from activist;
+    </select>
+
+<!--    获取Inspector表的主键-->
+    <select id="findAllNums" resultType="String">
+        select * from inspector;
+    </select>
+
+
+
+
+
+
 
 </mapper>

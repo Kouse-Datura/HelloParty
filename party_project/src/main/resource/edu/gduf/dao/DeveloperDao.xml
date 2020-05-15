@@ -5,16 +5,50 @@
 <mapper namespace="edu.gduf.dao.DeveloperDao">
     <resultMap id="developerMap" type="edu.gduf.domain.Developer">
         <id property="num" column="num"/>
+        <result property="identifyingDeveloper" column="identifying_developer"/>
         <result property="dadName" column="dad_name"/>
         <result property="dadIdentity" column="dad_identity"/>
         <result property="dadStatus" column="dad_status"/>
         <result property="momName" column="mom_name"/>
         <result property="momIdentity" column="mom_identity"/>
         <result property="momStatus" column="mom_status"/>
+        <result property="enterLeagueTime" column="enter_league_time"/>
     </resultMap>
 
     <select id="findAll" resultMap="developerMap">
         select * from developer;
     </select>
 
+    <!--  根据学号查询信息 -->
+    <select id="findDeveloperByNum" resultMap="developerMap">
+        select * from developer where num = #{num}
+    </select>
+
+<!--    更新student表中的发展阶段状态-->
+    <update id="updateStage" parameterType="java.util.List">
+        update student set stage_of_development = 'Developer' where num in
+        <foreach collection="list" open="(" close=")" separator="," item="developer">
+            #{developer.num}
+        </foreach>
+    </update>
+    
+    <select id="findAllNums" resultType="String">
+        select num from developer;
+    </select>
+    
+    <select id="findAllNumsFromInspector" resultType="String">
+        select num from inspector;
+    </select>
+
+    <insert id="addDeveloperList" parameterType="java.util.List">
+        insert into developer (num, identifying_developer, profession, dad_name, dad_identity, dad_status, mom_name, mom_identity, mom_status, enter_league_time, introducer1, introducer2) VALUES
+            <foreach collection="list" separator="," item="developer">
+                (
+                 #{developer.num},#{developer.identifyingDeveloper},#{developer.profession},
+                 #{developer.dadName},#{developer.dadIdentity},#{developer.dadStatus},
+                 #{developer.momName},#{developer.momIdentity},#{developer.momStatus},
+                 #{developer.enterLeagueTime},#{developer.introducer1},#{developer.introducer2}
+                )
+            </foreach>
+    </insert>
 </mapper>
